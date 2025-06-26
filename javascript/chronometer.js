@@ -2,7 +2,7 @@ class Chronometer {
   constructor() {
     this.currentTime = 0;
     this.intervalId = null;
-    // ... your code goes here
+   
   }
 
   start(callback) {
@@ -18,42 +18,27 @@ class Chronometer {
 
   getMinutes() {
     return Math.floor(this.currentTime / 60)
-    // ... your code goes here
   }
 
   getSeconds() {
      return Math.floor(this.currentTime % 60)
-    // ... your code goes here
+    
   }
 
   computeTwoDigitNumber(value) {
-return  value.toString().padStart(2,"0")
+   return  value.toString().padStart(2,"0")
 
 }
 
   stop() {
     clearInterval(this.intervalId)
     
-    // ... your code goes here
+    
   }
 
   reset() {
-    this.currentTime = 0;
-    this.intervalId = null;
-    document.querySelector('#clock').innerHTML=`
-      <div id="sphere">
-        <span id="minDec" class="number">0</span>
-        <span id="minUni" class="number">0</span>
-        <span>:</span>
-        <span id="secDec" class="number">0</span>
-        <span id="secUni" class="number">0</span>
-        <div id="milliseconds">
-          <span id="milDec">0</span>
-          <span id="milUni">0</span>
-        </div>
-      </div>
-    `
-    // ... your code goes here
+    this.currentTime= 0;
+      
   }
 
   split() {
