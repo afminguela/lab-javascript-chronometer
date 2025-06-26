@@ -1,3 +1,5 @@
+const Chronometer = require("./chronometer");
+
 const chronometer = new Chronometer();
 
 // get the buttons:
@@ -18,10 +20,14 @@ function printTime() {
 }
 
 function printMinutes() {
+ chronometer.getMinutes
+  
   // ... your code goes here
 }
 
 function printSeconds() {
+  chronometer.getSeconds
+
   // ... your code goes here
 }
 
@@ -31,32 +37,36 @@ function printMilliseconds() {
 }
 
 function printSplit() {
+  chronometer.split
   // ... your code goes here
 }
 
 function clearSplits() {
+
   // ... your code goes here
 }
 
 function setStopBtn() {
+  chronometer.stop
   // ... your code goes here
 }
 
 function setSplitBtn() {
+  chronometer.split
   // ... your code goes here
 }
 
 function setStartBtn() {
-  // ... your code goes here
-}
-
+ chronometer.start
+ }
 function setResetBtn() {
+chronometer.reset
   // ... your code goes here
 }
 
 // Start/Stop Button
 btnLeftElement.addEventListener('click', () => {
-  // ... your code goes here
+ 
 });
 
 // Reset/Split Button
