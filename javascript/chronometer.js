@@ -25,14 +25,14 @@ class Chronometer {
     
   }
 
-  computeTwoDigitNumber(value) {
-   return  value.toString().padStart(2,"0")
-
+computeTwoDigitNumber(value) {
+    return value.toString().padStart(2, "0");
 }
+
 
   stop() {
     clearInterval(this.intervalId)
-    
+    this.intervalId = null;
     
   }
 
